@@ -10,6 +10,7 @@ python:
 env:
     - DEPS=true
     - DEPS=false
+    
 install:
     # always install unittest2 on py26 even if $DEPS is unset
     - if [[ $TRAVIS_PYTHON_VERSION == '2.6' ]]; then pip install --use-mirrors unittest2; fi
